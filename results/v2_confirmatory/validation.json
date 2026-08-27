@@ -1,0 +1,132 @@
+{
+  "checks": [
+    {
+      "detail": "Protocol, configuration, and implementation fingerprints are recorded.",
+      "name": "frozen_fingerprints_present",
+      "passed": true
+    },
+    {
+      "detail": "The model provider, exact name, and digest are recorded.",
+      "name": "model_identity_recorded",
+      "passed": true
+    },
+    {
+      "detail": "Found 160 of 160 pre-generated cells.",
+      "name": "world_count",
+      "passed": true
+    },
+    {
+      "detail": "Event identifiers are sequential and cell identifiers are unique.",
+      "name": "unique_world_and_cell_ids",
+      "passed": true
+    },
+    {
+      "detail": "Worlds, weights, signal assignments, and reveal orders match deterministic generation.",
+      "name": "exact_frozen_world_schedule",
+      "passed": true
+    },
+    {
+      "detail": "Evaluation weights sum to one and population weights recompute from the data-generating process.",
+      "name": "probability_weight_accounting",
+      "passed": true
+    },
+    {
+      "detail": "Every oracle posterior recomputes exactly.",
+      "name": "oracle_recomputation",
+      "passed": true
+    },
+    {
+      "detail": "The confirmatory design contains every prior-by-signal-pattern cell exactly once.",
+      "name": "exhaustive_state_space_when_configured",
+      "passed": true
+    },
+    {
+      "detail": "Each reliability occupies every evidence position equally often in the full design.",
+      "name": "reliability_position_balance",
+      "passed": true
+    },
+    {
+      "detail": "Checkpoint contains 160 completed cells without gaps or duplicates.",
+      "name": "checkpoint_consistency",
+      "passed": true
+    },
+    {
+      "detail": "Each condition has exactly five decisions per completed cell.",
+      "name": "scheduled_call_counts",
+      "passed": true
+    },
+    {
+      "detail": "Condition execution order follows the frozen rotation.",
+      "name": "counterbalanced_execution_order",
+      "passed": true
+    },
+    {
+      "detail": "Corresponding positions use identical generation seeds.",
+      "name": "matched_generation_seeds",
+      "passed": true
+    },
+    {
+      "detail": "No prompt contains an oracle, outcome, or unavailable raw signals.",
+      "name": "information_firewalls",
+      "passed": true
+    },
+    {
+      "detail": "Every prompt reconstructs exactly from legally visible state.",
+      "name": "exact_prompt_reconstruction",
+      "passed": true
+    },
+    {
+      "detail": "All probabilities are finite and inside the common bounds.",
+      "name": "forecast_bounds",
+      "passed": true
+    },
+    {
+      "detail": "Compressed and market states reproduce their saved probability chains.",
+      "name": "probability_chain_accounting",
+      "passed": true
+    },
+    {
+      "detail": "Forecast errors and expected proper scores recompute exactly.",
+      "name": "observation_recomputation",
+      "passed": true
+    },
+    {
+      "detail": "All path movement diagnostics recompute exactly.",
+      "name": "path_movement_accounting",
+      "passed": true
+    },
+    {
+      "detail": "Every scheduled decision has a parsed response; no fallback exists.",
+      "name": "no_behavioral_fallback",
+      "passed": true
+    },
+    {
+      "detail": "Saved parsed forecasts match the final raw model responses.",
+      "name": "raw_response_audit",
+      "passed": true
+    },
+    {
+      "detail": "Prompt and output token totals match all saved calls.",
+      "name": "token_accounting",
+      "passed": true
+    },
+    {
+      "detail": "Each completed cell has one observation per system.",
+      "name": "unique_event_system_observations",
+      "passed": true
+    },
+    {
+      "detail": "Status is 'complete'; 160 of 160 cells are complete.",
+      "name": "complete_sample",
+      "passed": true
+    }
+  ],
+  "completed_events": 160,
+  "confirmatory_design": true,
+  "confirmatory_valid": true,
+  "expected_events": 160,
+  "protocol_version": "aggregation-confirmatory-v2.0",
+  "status": "complete",
+  "valid": true,
+  "warnings": []
+}

@@ -1,0 +1,5 @@
+comparison,role,cells,weighted_mean_difference,weighted_first_strict_win_probability,weighted_tie_probability,unweighted_mean_difference,unweighted_first_strict_win_rate,interpretation
+market_minus_central_compact,primary_mechanism_test,160,-0.015082633254352502,0.646038,0.05589349999999999,-0.012987432267518681,0.61875,negative_favors_first_system
+market_minus_central_full,v1_replication,160,-0.014064299783887495,0.5298535,0.077259,-0.012522022471439619,0.525,negative_favors_first_system
+central_compact_minus_central_full,compression_scaffold_test,160,0.0010183334704650055,0.41403275,0.0750865,0.0004654097960790633,0.43125,negative_favors_first_system
+market_minus_prior,market_vs_no_aggregation,160,-0.063731930487225,0.82873725,0,-0.0537658749224145,0.7875,negative_favors_first_system

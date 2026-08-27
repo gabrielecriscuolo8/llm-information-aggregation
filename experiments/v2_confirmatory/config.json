@@ -1,0 +1,23 @@
+{
+  "protocol_version": "aggregation-confirmatory-v2.0",
+  "experiment": {
+    "events": 160,
+    "seed": 20260907,
+    "n_agents": 5,
+    "priors": [0.3, 0.4, 0.5, 0.6, 0.7],
+    "reliabilities": [0.55, 0.6, 0.65, 0.7, 0.75],
+    "forecast_min_probability": 0.01,
+    "forecast_max_probability": 0.99,
+    "reason_word_limit": 24,
+    "token_imbalance_warning_fraction": 0.15
+  },
+  "model": {
+    "provider": "ollama",
+    "base_url": "http://localhost:11434",
+    "name": "qwen3:8b",
+    "temperature": 0.0,
+    "timeout_seconds": 240,
+    "max_retries": 3,
+    "max_output_tokens": 180
+  }
+}

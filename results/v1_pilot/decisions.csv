@@ -1,0 +1,451 @@
+event_id,condition,position,actor_id,generation_seed,probability,reason,attempts,elapsed_seconds,prompt_tokens,output_tokens
+1,central,1,central_analyst,1473561610,0.723,"The signal with reliability 0.65 supports the YES outcome, updating the prior probability from 0.6 to approximately 0.723.",1,17.252345700049773,283,45
+1,central,2,central_analyst,8740156,0.765,"Two signals with reliability 0.65 and 0.6 support the YES outcome, updating the prior probability from 0.6 to approximately 0.765.",1,9.829486100003123,343,50
+1,central,3,central_analyst,123798403,0.862,"Three signals with reliabilities 0.65, 0.6, and 0.75 all support the YES outcome, updating the prior probability from 0.6 to approximately 0.862.",1,11.318663699901663,368,59
+1,central,4,central_analyst,2115007346,0.924,"Four signals with reliabilities 0.65, 0.6, 0.75, and 0.7 all support the YES outcome, updating the prior probability from 0.6 to approximately 0.924.",1,12.153132000006735,396,64
+1,central,5,central_analyst,202995040,0.968,"Five signals with reliabilities 0.65, 0.6, 0.75, 0.7, and 0.55 all support the YES outcome, updating the prior probability from 0.6 to approximately 0.968.",1,13.446712699951604,421,70
+1,ensemble,1,agent_1,1473561610,0.76,"The private signal with reliability 0.65 updates the prior probability of 0.6 towards YES, resulting in a posterior probability of approximately 0.76.",1,8.883525399956852,254,47
+1,ensemble,2,agent_3,8740156,0.75,"The private signal with reliability 0.6 updates the prior probability of 0.6 towards YES, resulting in a posterior probability of 0.75.",1,7.31307559995912,253,45
+1,ensemble,3,agent_2,123798403,0.792,The private signal with reliability 0.75 updates the prior probability of 0.6 to approximately 0.792 using Bayesian reasoning.,1,7.239864000002854,254,44
+1,ensemble,4,agent_4,2115007346,0.77,"The private signal with reliability 0.7 updates the prior probability of 0.6 towards YES, resulting in a posterior probability of approximately 0.77.",1,7.584017599932849,253,46
+1,ensemble,5,agent_5,202995040,0.73,"The private signal with reliability 0.55 updates the prior probability of 0.6 towards YES, resulting in a posterior probability of approximately 0.73.",1,7.630242999992333,254,47
+1,market,1,agent_1,1473561610,0.77,"The public price of 0.6 reflects prior information, and my private signal with reliability 0.65 updates this to a posterior probability of 0.77.",1,11.360456899972633,357,48
+1,market,2,agent_3,8740156,0.83,The public price history and my private signal of reliability 0.6 suggest a higher probability of YES than the current price of 0.77.,1,9.549707100028172,393,43
+1,market,3,agent_2,123798403,0.88,"The public price history suggests increasing confidence, and my private signal with reliability 0.75 supports the YES outcome.",1,9.843269599950872,430,36
+1,market,4,agent_4,2115007346,0.89,"The current price reflects prior trades, and my private signal of reliability 0.7 supports the YES outcome, adjusting the estimate upward from the prior of 0.6.",1,12.26159660005942,466,53
+1,market,5,agent_5,202995040,0.89,The current price reflects aggregated public evidence and my private signal aligns with the existing trend without contradicting it.,1,10.931362999952398,503,34
+2,central,1,central_analyst,709335900,0.55,The signal from agent_3 with reliability 0.55 provides direct evidence supporting the YES outcome.,1,6.8277984000742435,283,33
+2,central,2,central_analyst,1919628350,0.34,"The combined evidence from agent_3 and agent_4 signals, with reliabilities 0.55 and 0.7, updates the probability to 0.34.",1,9.142591699957848,331,49
+2,central,3,central_analyst,1223502444,0.48,"The combined evidence from agent_2, agent_3, and agent_4 signals, with reliabilities 0.6, 0.55, and 0.7, updates the probability to 0.48.",1,11.00166009995155,366,60
+2,central,4,central_analyst,718123404,0.44,"The combined evidence from all visible signals, with reliabilities 0.55, 0.7, 0.6, and 0.65, updates the probability to 0.44.",1,11.22933539992664,397,56
+2,central,5,central_analyst,2086590482,0.41,"The combined evidence from all visible signals, with reliabilities 0.55, 0.7, 0.6, 0.65, and 0.75, updates the probability to 0.41.",1,12.183998099993914,413,62
+2,ensemble,1,agent_3,709335900,0.63,The private signal with reliability 0.55 increases the probability of YES from the prior 0.5 to 0.63.,1,7.424558500060812,254,41
+2,ensemble,2,agent_4,1919628350,0.476,The private signal 'NO' with reliability 0.7 reduces the probability of YES from 0.5 to approximately 0.476.,1,7.086676900042221,253,44
+2,ensemble,3,agent_2,1223502444,0.6923,The private signal with reliability 0.6 updates the prior probability of 0.5 to approximately 0.6923 using Bayesian reasoning.,1,7.22979899996426,253,45
+2,ensemble,4,agent_5,718123404,0.56,The private signal 'NO' with reliability 0.65 updates the prior probability from 0.5 to 0.56.,1,6.846771700074896,254,41
+2,ensemble,5,agent_1,2086590482,0.4286,The private signal 'NO' with reliability 0.75 updates the prior probability from 0.5 to approximately 0.4286 using Bayes' theorem.,1,7.852601099992171,254,51
+2,market,1,agent_3,709335900,0.725,The private signal with reliability 0.55 updates the prior probability of 0.5 to a posterior of approximately 0.725.,1,10.770010499982163,357,44
+2,market,2,agent_4,1919628350,0.65,"The public price history and private signal suggest a moderate probability of NO, adjusting the prior belief towards the signal's reliability.",1,8.625152499997057,395,36
+2,market,3,agent_2,1223502444,0.74,"The public price history suggests increasing uncertainty, and my private signal of reliability 0.6 supports a higher probability than the current price.",1,9.755216800025664,431,39
+2,market,4,agent_5,718123404,0.61,"The public price history suggests a gradual shift toward NO, and the private signal with reliability 0.65 indicates a moderate inclination toward NO, adjusting the prior belief of 0.5.",1,12.53849590010941,468,57
+2,market,5,agent_1,2086590482,0.58,"The public price history suggests a gradual shift toward NO, and the private signal of reliability 0.75 indicates a moderate inclination toward NO, leading to a calibrated probability of 0.58.",1,12.976106100017205,505,53
+3,central,1,central_analyst,1958928955,0.45,"A signal with reliability 0.55 indicates 'NO', adjusting the prior probability from 0.5 to 0.45.",1,7.700587300001644,283,41
+3,central,2,central_analyst,78885236,0.57,"A signal with reliability 0.55 indicates 'NO' and a signal with reliability 0.7 indicates 'YES', updating the probability from 0.45 to 0.57.",1,9.862836400046945,339,54
+3,central,3,central_analyst,1021805893,0.52,"Three signals with reliabilities 0.55, 0.7, and 0.75 indicate 'NO', 'YES', and 'NO', respectively, leading to a recalibrated probability of 0.52.",1,11.762377200066112,372,66
+3,central,4,central_analyst,595943815,0.58,"Four signals with reliabilities 0.55, 0.7, 0.75, and 0.6 indicate 'NO', 'YES', 'NO', and 'NO', respectively, leading to a recalibrated probability of 0.58.",1,12.537050999933854,397,68
+3,central,5,central_analyst,378047338,0.62,"Five signals with reliabilities 0.55, 0.7, 0.75, 0.6, and 0.65 indicate 'NO', 'YES', 'NO', 'NO', and 'NO', respectively, leading to a recalibrated probability of 0.62.",1,14.13135629997123,425,77
+3,ensemble,1,agent_1,1958928955,0.46,The private signal 'NO' with reliability 0.55 slightly decreases the probability from the prior 0.5.,1,6.980315900058486,254,37
+3,ensemble,2,agent_5,78885236,0.775,The private signal with reliability 0.7 updates the prior probability of 0.5 to 0.775 using Bayesian reasoning.,1,6.842611900065094,253,42
+3,ensemble,3,agent_4,1021805893,0.4286,The private signal 'NO' with reliability 0.75 reduces the probability of YES from the prior 0.5 to approximately 0.4286.,1,7.556201500003226,254,49
+3,ensemble,4,agent_3,595943815,0.57,The private signal 'NO' with reliability 0.6 reduces the probability of YES from 0.5 to 0.57.,1,6.768551699933596,253,41
+3,ensemble,5,agent_2,378047338,0.56,The private signal 'NO' with reliability 0.65 slightly decreases the probability of YES from the prior 0.5.,1,6.58379479998257,254,39
+3,market,1,agent_1,1958928955,0.45,"The private signal indicates NO with reliability 0.55, adjusting the prior probability of 0.5 downward.",1,9.871177299995907,357,36
+3,market,2,agent_5,78885236,0.65,"The public price history suggests a prior belief of 0.45, and the private signal with reliability 0.7 updates this to 0.65.",1,9.576196699985303,393,46
+3,market,3,agent_4,1021805893,0.55,"The public price history suggests increasing confidence, but my private signal of reliability 0.75 indicates a NO, leading to a moderate adjustment from the current price.",1,10.216436699964106,430,45
+3,market,4,agent_3,595943815,0.51,The current price reflects prior trades and my private signal of reliability 0.6 indicating 'NO' slightly adjusts the estimate downward from the prior of 0.5.,1,11.816950700012967,466,52
+3,market,5,agent_2,378047338,0.47,"The private signal indicates NO with reliability 0.65, and the public price history suggests a slight shift toward YES, but the overall evidence leans toward NO.",1,11.87432489998173,503,45
+4,central,1,central_analyst,802849076,0.5,The signal 'NO' with reliability 0.65 provides no new information due to the symmetric reliability and prior probability of 0.5.,1,7.763587399967946,283,41
+4,central,2,central_analyst,1039306102,0.625,The signals 'NO' with reliability 0.65 and 'YES' with reliability 0.7 provide combined evidence that increases the probability from 0.5 to 0.625.,1,9.046438399935141,339,55
+4,central,3,central_analyst,411918553,0.727,"The combined evidence from three signals with reliabilities 0.65, 0.7, and 0.55, with two 'YES' signals and one 'NO' signal, updates the probability from 0.5 to 0.727.",1,10.663784199976362,373,69
+4,central,4,central_analyst,15593360,0.667,"The combined evidence from four signals with reliabilities 0.65, 0.7, 0.55, and 0.6, with two 'YES' signals and two 'NO' signals, updates the probability from 0.5 to 0.667.",1,11.682015900034457,406,74
+4,central,5,central_analyst,1293403324,0.682,"The updated probability incorporates all five signals with reliabilities 0.65, 0.7, 0.55, 0.6, and 0.75, with three 'YES' signals and two 'NO' signals, adjusting the prior probability from 0.5 to 0.682.",1,12.879891099990346,431,82
+4,ensemble,1,agent_5,802849076,0.56,The private signal 'NO' with reliability 0.65 slightly decreases the probability of YES from the prior 0.5.,1,6.81859230005648,254,39
+4,ensemble,2,agent_4,1039306102,0.76,The private signal with reliability 0.7 updates the prior probability of 0.5 to 0.76 using Bayesian reasoning.,1,6.359500200022012,253,40
+4,ensemble,3,agent_2,411918553,0.63,The private signal with reliability 0.55 increases the probability of YES from the prior 0.5 to 0.63.,1,6.607374100014567,254,41
+4,ensemble,4,agent_3,15593360,0.57,The private signal 'NO' with reliability 0.6 reduces the probability of YES from the prior 0.5 to 0.57.,1,6.658550899941474,253,43
+4,ensemble,5,agent_1,1293403324,0.714,The private signal with reliability 0.75 updates the prior probability of 0.5 to approximately 0.714 using Bayesian reasoning.,1,6.939385700039566,254,44
+4,market,1,agent_5,802849076,0.45,"The private signal indicates NO with reliability 0.65, adjusting the prior probability of 0.5 downward to 0.45.",1,9.422566599911079,357,42
+4,market,2,agent_4,1039306102,0.62,The public price history and my private signal with reliability 0.7 suggest a higher probability of YES than the current price of 0.45.,1,8.565740899997763,393,43
+4,market,3,agent_2,411918553,0.72,"The public price history suggests increasing confidence, and my private signal with reliability 0.55 updates the prior probability of 0.5 to 0.72.",1,9.482019699993543,430,47
+4,market,4,agent_3,15593360,0.68,"The current price reflects prior trades, and my private signal of reliability 0.6 suggests a NO, adjusting the estimate from the public price of 0.72.",1,10.673423099913634,466,53
+4,market,5,agent_1,1293403324,0.82,The private signal with reliability 0.75 and public price history suggest a higher probability than the prior of 0.5.,1,10.151693499996327,503,39
+5,central,1,central_analyst,1842340524,0.57,The signal 'NO' from an agent with reliability 0.65 reduces the probability from the prior 0.6 to 0.57.,1,7.602602700004354,283,44
+5,central,2,central_analyst,1814234906,0.48,The two 'NO' signals from agents with reliability 0.65 and 0.55 update the probability from the prior 0.6 to 0.48.,1,8.732520999968983,343,50
+5,central,3,central_analyst,384038897,0.52,The 'YES' signal from agent_5 with reliability 0.6 and the 'NO' signals from agents 1 and 2 with reliabilities 0.55 and 0.65 update the probability from 0.6 to 0.52.,1,10.757412599981762,368,69
+5,central,4,central_analyst,632476224,0.48,"The 'YES' signal from agent_5 with reliability 0.6 and the 'NO' signals from agents 1, 2, and 4 with reliabilities 0.55, 0.65, and 0.75 update the probability from 0.6 to 0.48.",1,12.361825500032865,407,80
+5,central,5,central_analyst,1175784361,0.54,"The combination of signals from agents 1, 2, 4, and 5 with reliabilities 0.55, 0.65, 0.75, and 0.6 respectively, along with the new 'YES' signal from agent 3 with reliability 0.7, updates the probability to 0.54.",1,13.607331899926066,437,87
+5,ensemble,1,agent_2,1842340524,0.56,The private signal 'NO' with reliability 0.65 reduces the prior probability of YES from 0.6 to 0.56.,1,7.409682500059716,254,43
+5,ensemble,2,agent_1,1814234906,0.56,The private signal 'NO' with reliability 0.55 slightly decreases the probability from the prior 0.6 to 0.56.,1,6.745895399944857,254,43
+5,ensemble,3,agent_5,384038897,0.75,"The private signal with reliability 0.6 supports the outcome YES, updating the prior probability of 0.6 to 0.75.",1,6.639425900066271,253,42
+5,ensemble,4,agent_4,632476224,0.57,The private signal 'NO' with reliability 0.75 reduces the prior probability of YES from 0.6 to 0.57.,1,6.846551900031045,254,43
+5,ensemble,5,agent_3,1175784361,0.77,The private signal with reliability 0.7 increases the probability of YES from the prior 0.6 to 0.77.,1,6.434148899978027,253,40
+5,market,1,agent_2,1842340524,0.55,"The private signal indicates NO with reliability 0.65, adjusting the prior probability of 0.6 downward.",1,9.114515599911101,357,36
+5,market,2,agent_1,1814234906,0.55,The public price reflects prior information and the private signal aligns with the current price.,1,7.438547900062986,394,29
+5,market,3,agent_5,384038897,0.65,The public price history and private signal suggest a moderate increase in probability from the prior.,1,7.33142990001943,430,29
+5,market,4,agent_4,632476224,0.58,"The current price reflects prior trades, and my private signal of reliability 0.75 indicates a NO, adjusting the estimate from the prior of 0.6.",1,10.968005299917422,467,52
+5,market,5,agent_3,1175784361,0.74,The private signal with reliability 0.7 and the public price history suggest a moderate increase in probability from the prior of 0.6.,1,10.623206999967806,503,41
+6,central,1,central_analyst,1583700186,0.55,The signal 'YES' with reliability 0.7 updates the prior probability from 0.3 to 0.55 using Bayesian reasoning.,1,7.464344200096093,282,42
+6,central,2,central_analyst,1243982086,0.72,Both signals 'YES' with reliabilities 0.7 and 0.6 update the prior probability from 0.3 to 0.72 using Bayesian reasoning.,1,8.793909800006077,339,48
+6,central,3,central_analyst,1525636826,0.86,"Three signals 'YES' with reliabilities 0.7, 0.6, and 0.65 update the prior probability from 0.3 to 0.86 using Bayesian reasoning.",1,10.058327800012194,365,55
+6,central,4,central_analyst,1099300776,0.95,"Four 'YES' signals with reliabilities 0.7, 0.6, 0.65, and 0.75 update the prior probability from 0.3 to 0.95 using Bayesian reasoning.",1,10.718729099957272,392,61
+6,central,5,central_analyst,141337563,0.78,"All five signals are combined using Bayesian updating, with four 'YES' signals and one 'NO' signal adjusting the prior probability from 0.3 to 0.78.",1,10.17228990001604,418,49
+6,ensemble,1,agent_1,1583700186,0.67,The private signal with reliability 0.7 updates the prior probability of 0.3 to a posterior probability of approximately 0.67.,1,7.3894966000225395,253,42
+6,ensemble,2,agent_2,1243982086,0.55,The private signal with reliability 0.6 updates the prior probability of 0.3 to 0.55 using Bayesian reasoning.,1,6.616480599972419,253,40
+6,ensemble,3,agent_3,1525636826,0.55,"The private signal with reliability 0.65 updates the prior probability of 0.3 towards YES, resulting in a posterior probability of 0.55.",1,7.116611700039357,254,46
+6,ensemble,4,agent_5,1099300776,0.65,The private signal with reliability 0.75 updates the prior probability of 0.3 to 0.65 using Bayesian reasoning.,1,6.679141099913977,254,41
+6,ensemble,5,agent_4,141337563,0.38,The private signal 'NO' with reliability 0.55 slightly decreases the probability from the prior 0.3.,1,6.4330169999739155,254,37
+6,market,1,agent_1,1583700186,0.57,The private signal with reliability 0.7 updates the prior probability of 0.3 to 0.57.,1,9.22006110008806,356,37
+6,market,2,agent_2,1243982086,0.69,"The public price history suggests a prior belief of 0.57, and my private signal with reliability 0.6 updates this to 0.69.",1,8.989195099915378,392,46
+6,market,3,agent_3,1525636826,0.76,"The public price history suggests increasing confidence, and my private signal of reliability 0.65 supports a higher probability than the current price.",1,9.162501199985854,429,40
+6,market,4,agent_5,1099300776,0.82,"The current price of 0.76 reflects prior trades, and my private signal of reliability 0.75 for YES updates this to a higher probability.",1,10.936862100032158,466,51
+6,market,5,agent_4,141337563,0.67,"The private signal indicates NO with reliability 0.55, adjusting the prior 0.3 downward, while the public price history suggests increasing confidence toward YES.",1,11.099903799942695,503,45
+7,central,1,central_analyst,452816663,0.75,"The signal from agent_4 with reliability 0.75 indicates YES, updating the prior probability from 0.6 to 0.75.",1,7.849811400054023,283,44
+7,central,2,central_analyst,387825553,0.81,"Both signals indicate YES, with reliabilities 0.75 and 0.65, leading to an updated probability of approximately 0.81.",1,8.631607300019823,343,45
+7,central,3,central_analyst,170723652,0.68,"Three signals are available: two YES with reliabilities 0.75 and 0.65, and one NO with reliability 0.7. The updated probability accounts for all signals and their reliabilities.",1,9.820519200060517,363,56
+7,central,4,central_analyst,1607223661,0.73,"All four signals are considered: three YES with reliabilities 0.75, 0.65, and 0.55, and one NO with reliability 0.7. The updated probability reflects the combined reliability of these signals.",1,11.196001300006174,394,63
+7,central,5,central_analyst,1998190935,0.68,"All five signals are considered: four YES with reliabilities 0.75, 0.65, 0.55, and 0.6, and one NO with reliability 0.7. The updated probability reflects the combined reliability of these signals.",1,12.102820900036022,420,68
+7,ensemble,1,agent_4,452816663,0.8125,The private signal with reliability 0.75 updates the prior probability of 0.6 to 0.8125 using Bayesian reasoning.,1,8.29661620000843,254,45
+7,ensemble,2,agent_2,387825553,0.77,"The private signal with reliability 0.65 updates the prior probability of 0.6 towards YES, resulting in a posterior probability of approximately 0.77.",1,7.329832099960186,254,47
+7,ensemble,3,agent_3,170723652,0.571,The private signal 'NO' with reliability 0.7 reduces the prior probability of YES from 0.6 to approximately 0.571.,1,7.167607299983501,253,45
+7,ensemble,4,agent_1,1607223661,0.73,"The private signal with reliability 0.55 updates the prior probability of 0.6 towards YES, resulting in a posterior probability of approximately 0.73.",1,7.304793299990706,254,47
+7,ensemble,5,agent_5,1998190935,0.56,The private signal 'NO' with reliability 0.6 reduces the prior probability of YES from 0.6 to 0.56.,1,6.7857935000211,253,42
+7,market,1,agent_4,452816663,0.82,"The private signal with reliability 0.75 updates the prior probability of 0.6 towards YES, resulting in a calibrated estimate of 0.82.",1,10.241013600025326,357,46
+7,market,2,agent_2,387825553,0.86,The public price history and private signal update the prior belief using the reliability of the signal and the observed price movement.,1,8.132595399976708,394,35
+7,market,3,agent_3,170723652,0.77,"The public price reflects prior information and the private signal suggests a moderate likelihood of NO, adjusting the estimate toward 0.77.",1,9.16274900001008,430,39
+7,market,4,agent_1,1607223661,0.82,The current price reflects prior trades and my private signal updates the prior probability with moderate reliability.,1,9.528213700046763,467,36
+7,market,5,agent_5,1998190935,0.66,"The private signal indicates NO with reliability 0.6, adjusting the prior of 0.6 downward while considering the public price history.",1,10.590612999978475,503,40
+8,central,1,central_analyst,1123383927,0.55,"The signal with reliability 0.65 indicates YES, updating the prior probability from 0.4 to 0.55.",1,7.385878299945034,283,40
+8,central,2,central_analyst,2013440744,0.48,"The signal with reliability 0.65 indicates YES and the signal with reliability 0.55 indicates NO, updating the prior probability from 0.4 to 0.48.",1,9.393186700064689,339,52
+8,central,3,central_analyst,637103921,0.58,"The three signals with reliabilities 0.65, 0.55, and 0.6 provide updated evidence, leading to a revised probability of 0.58 from the prior 0.4.",1,10.237223600037396,370,58
+8,central,4,central_analyst,1428816448,0.74,"The four visible signals with reliabilities 0.65, 0.55, 0.6, and 0.75 provide updated evidence, leading to a revised probability of 0.74 from the prior 0.58.",1,11.48452149995137,396,66
+8,central,5,central_analyst,1148461797,0.82,"The five visible signals with reliabilities 0.65, 0.55, 0.6, 0.75, and 0.7 provide updated evidence, leading to a revised probability of 0.82 from the prior 0.74.",1,12.319872500025667,423,71
+8,ensemble,1,agent_2,1123383927,0.623,The private signal with reliability 0.65 updates the prior probability of 0.4 to approximately 0.623 using Bayesian reasoning.,1,7.75544139998965,254,44
+8,ensemble,2,agent_5,2013440744,0.36,The private signal 'NO' with reliability 0.55 reduces the probability from the prior 0.4 to 0.36.,1,6.843609199975617,254,42
+8,ensemble,3,agent_4,637103921,0.6286,The private signal with reliability 0.6 updates the prior probability of 0.4 to approximately 0.6286 using Bayesian reasoning.,1,7.08978279994335,253,45
+8,ensemble,4,agent_1,1428816448,0.65,The private signal with reliability 0.75 updates the prior probability of 0.4 to 0.65 using Bayesian reasoning.,1,6.83315840002615,254,41
+8,ensemble,5,agent_3,1148461797,0.67,The private signal with reliability 0.7 updates the prior probability of 0.4 to a posterior probability of approximately 0.67.,1,6.8701006000628695,253,42
+8,market,1,agent_2,1123383927,0.65,The private signal with reliability 0.65 directly supports the YES outcome.,1,8.58194370009005,357,28
+8,market,2,agent_5,2013440744,0.55,"The private signal indicates 'NO' with reliability 0.55, adjusting the prior probability of 0.4 downward.",1,8.420389300095849,394,38
+8,market,3,agent_4,637103921,0.63,"The public price history and private signal suggest a moderate increase in probability from the prior, incorporating the reliability of the signal and recent price movements.",1,9.170263899955899,430,40
+8,market,4,agent_1,1428816448,0.72,"The current price of 0.63 reflects prior trades, and my private signal of reliability 0.75 for YES updates this to a higher probability.",1,11.022245100000873,467,51
+8,market,5,agent_3,1148461797,0.82,"The private signal of reliability 0.7 supports YES, and the current price of 0.72 reflects prior information and previous trades.",1,10.507303999969736,503,41
+9,central,1,central_analyst,1015002254,0.4,The signal 'NO' with reliability 0.75 reduces the probability from the prior 0.4 to 0.4.,1,7.527783299912699,283,39
+9,central,2,central_analyst,1353953181,0.28,The two 'NO' signals with reliabilities 0.75 and 0.7 update the prior probability from 0.4 to 0.28.,1,9.099447099957615,337,47
+9,central,3,central_analyst,973360265,0.22,"The three 'NO' signals with reliabilities 0.75, 0.7, and 0.55 update the prior probability from 0.4 to 0.22.",1,9.673363400041126,365,54
+9,central,4,central_analyst,1724591903,0.34,"The four signals, with reliabilities 0.75, 0.7, 0.55, and 0.65, update the prior probability from 0.4 to 0.34.",1,11.409196799970232,392,65
+9,central,5,central_analyst,778728451,0.43,"All five signals, with reliabilities 0.75, 0.7, 0.55, 0.65, and 0.6, update the prior probability from 0.4 to 0.43.",1,11.518073000013828,416,64
+9,ensemble,1,agent_4,1015002254,0.57,The private signal 'NO' with reliability 0.75 reduces the probability from the prior 0.4 to 0.57.,1,7.326989299966954,254,42
+9,ensemble,2,agent_2,1353953181,0.53,The private signal 'NO' with reliability 0.7 reduces the probability from the prior 0.4 to 0.53.,1,6.8419034000253305,253,41
+9,ensemble,3,agent_1,973360265,0.34,The private signal 'NO' with reliability 0.55 slightly decreases the probability from the prior 0.4.,1,6.419964300002903,254,37
+9,ensemble,4,agent_3,1724591903,0.623,The private signal with reliability 0.65 updates the prior probability of 0.4 to approximately 0.623 using Bayesian reasoning.,1,7.060257199918851,254,44
+9,ensemble,5,agent_5,778728451,0.55,The private signal 'NO' with reliability 0.6 reduces the prior probability of YES from 0.4 to 0.55.,1,6.882920900010504,253,42
+9,market,1,agent_4,1015002254,0.35,"The private signal indicates NO with reliability 0.75, adjusting the prior probability of 0.4 downward.",1,9.277775999973528,357,36
+9,market,2,agent_2,1353953181,0.31,The public price history and private signal suggest a lower probability of YES due to the NO signal with reliability 0.7 and the current price reflecting prior information.,1,8.957304500043392,393,44
+9,market,3,agent_1,973360265,0.34,"The public price history suggests a gradual decrease in probability, and my private signal of reliability 0.55 indicates a NO倾向, leading to a moderate adjustment from the prior of 0.4.",1,10.516845399979502,430,53
+9,market,4,agent_3,1724591903,0.48,"The private signal with reliability 0.65 updates the prior 0.4, and the public price history suggests moderate movement toward YES.",1,10.21928580000531,467,41
+9,market,5,agent_5,778728451,0.42,"The private signal indicates NO with reliability 0.6, adjusting the prior 0.4 downward to 0.42.",1,10.663459299947135,503,39
+10,central,1,central_analyst,400620036,0.55,"The signal from agent_4 with reliability 0.7 provides partial evidence for YES, adjusting the prior probability from 0.3 to 0.55.",1,8.014474999974482,283,46
+10,central,2,central_analyst,1225107338,0.73,"Both signals from agent_4 and agent_2 with reliability 0.7 and 0.75 respectively provide evidence for YES, updating the probability from 0.55 to 0.73.",1,9.663881400018,345,56
+10,central,3,central_analyst,277872407,0.64,"The signals from agent_4 and agent_2 support YES with reliabilities 0.7 and 0.75, while agent_3's NO signal has reliability 0.6, leading to a calibrated probability of 0.64.",1,11.241542899981141,374,70
+10,central,4,central_analyst,1950856670,0.73,"The signals from agents 4, 2, and 5 support YES with reliabilities 0.7, 0.75, and 0.65, while agent 3's NO signal has reliability 0.6, leading to a calibrated probability of 0.73.",1,12.164798999903724,402,74
+10,central,5,central_analyst,1214688446,0.78,"The signals from agents 4, 2, 5, and 1 support YES with reliabilities 0.7, 0.75, 0.65, and 0.55, while agent 3's NO signal has reliability 0.6, leading to a calibrated probability of 0.78.",1,13.874920499976724,432,83
+10,ensemble,1,agent_4,400620036,0.67,The private signal with reliability 0.7 updates the prior probability of 0.3 to a posterior probability of approximately 0.67.,1,7.368616899941117,254,42
+10,ensemble,2,agent_2,1225107338,0.625,The private signal with reliability 0.75 updates the prior probability of 0.3 to 0.625 using Bayesian reasoning.,1,7.007215799996629,255,43
+10,ensemble,3,agent_3,277872407,0.43,The private signal 'NO' with reliability 0.6 reduces the probability from the prior 0.3 to 0.43.,1,6.76876580005046,254,41
+10,ensemble,4,agent_5,1950856670,0.55,The private signal with reliability 0.65 updates the prior probability of 0.3 to 0.55.,1,6.445938299992122,255,38
+10,ensemble,5,agent_1,1214688446,0.52,The private signal with reliability 0.55 slightly increases the probability of YES from the prior of 0.3.,1,6.401991399936378,255,37
+10,market,1,agent_4,400620036,0.58,The private signal with reliability 0.7 updates the prior probability of 0.3 to 0.58 using Bayesian reasoning.,1,10.380629199906252,357,40
+10,market,2,agent_2,1225107338,0.73,The public price history and private signal update the prior belief using the reliability of the signal and the observed price movement.,1,8.879760700045153,394,35
+10,market,3,agent_3,277872407,0.67,"The public price history suggests increasing confidence, and my private signal of reliability 0.6 indicates a moderate inclination towards NO, leading to a calibrated probability of 0.67.",1,11.17169779993128,430,49
+10,market,4,agent_5,1950856670,0.74,"The current price of 0.67 reflects prior trades, and my private signal of reliability 0.65 for YES updates this to a higher probability.",1,11.52895909990184,467,45
+10,market,5,agent_1,1214688446,0.77,The current price reflects prior trades and my private signal updates the prior probability using reliability-weighted evidence.,1,10.92269729997497,504,32
+11,central,1,central_analyst,1155223582,0.723,"The signal with reliability 0.65 supports the YES outcome, updating the prior probability from 0.6 to approximately 0.723.",1,8.60217989992816,284,45
+11,central,2,central_analyst,95296710,0.67,"The signal with reliability 0.65 supports YES and the signal with reliability 0.6 supports NO, leading to a balanced update from the prior probability of 0.6 to approximately 0.67.",1,10.780464500072412,344,57
+11,central,3,central_analyst,947228590,0.73,"The three signals, with reliabilities 0.65, 0.6, and 0.75, support YES and NO with weighted influence, leading to an updated probability of approximately 0.73.",1,11.515599100035615,376,58
+11,central,4,central_analyst,598832233,0.68,"The four signals, with reliabilities 0.65, 0.6, 0.75, and 0.55, support YES and NO with weighted influence, leading to an updated probability of approximately 0.68.",1,12.532522200024687,397,64
+11,central,5,central_analyst,1832274016,0.58,"The five signals, with reliabilities 0.65, 0.6, 0.75, 0.55, and 0.7, provide mixed support for YES and NO, leading to a recalibrated probability of approximately 0.58.",1,13.689497699961066,422,70
+11,ensemble,1,agent_1,1155223582,0.76,"The private signal with reliability 0.65 updates the prior probability of 0.6 towards YES, resulting in a posterior probability of approximately 0.76.",1,8.486854899907485,255,47
+11,ensemble,2,agent_4,95296710,0.55,The private signal 'NO' with reliability 0.6 reduces the prior probability of YES from 0.6 to 0.55.,1,7.287990999990143,254,42
+11,ensemble,3,agent_2,947228590,0.78,The private signal with reliability 0.75 increases the probability of YES from the prior 0.6 to 0.78.,1,7.20927400002256,255,41
+11,ensemble,4,agent_3,598832233,0.56,The private signal 'NO' with reliability 0.55 slightly decreases the probability from the prior 0.6.,1,6.77413539995905,255,37
+11,ensemble,5,agent_5,1832274016,0.57,The private signal 'NO' with reliability 0.7 reduces the prior probability of YES from 0.6 to 0.57.,1,7.311644500005059,254,42
+11,market,1,agent_1,1155223582,0.77,"The public price reflects prior belief of 0.6, and the private signal with reliability 0.65 updates this to 0.77.",1,11.034284200053662,358,44
+11,market,2,agent_4,95296710,0.68,"The public price history suggests a prior belief of 0.6, and my private signal of reliability 0.6 for NO adjusts the estimate downward.",1,9.693447199999355,394,43
+11,market,3,agent_2,947228590,0.76,"The public price history suggests a gradual decrease in confidence, while the private signal with reliability 0.75 supports the YES outcome.",1,10.658248299965635,431,45
+11,market,4,agent_3,598832233,0.66,"The public price history suggests a gradual shift toward NO, and my private signal of reliability 0.55 supports this trend.",1,11.301594899967313,468,44
+11,market,5,agent_5,1832274016,0.58,"The private signal indicates NO with reliability 0.7, adjusting the current price of 0.66 downward while considering the prior of 0.6 and the public price history.",1,12.87823519995436,504,50
+12,central,1,central_analyst,1189781028,0.46,The signal 'NO' with reliability 0.7 reduces the probability from the prior 0.7 to 0.46.,1,8.015381600009277,283,40
+12,central,2,central_analyst,516474355,0.56,"The signals 'NO' with reliability 0.7 and 'YES' with reliability 0.75 provide balanced evidence, leading to a probability of 0.56.",1,9.720894200028852,339,49
+12,central,3,central_analyst,35015700,0.52,"The signals 'NO' with reliability 0.7 and 0.55, and 'YES' with reliability 0.75 provide slightly more weight to 'NO', leading to a probability of 0.52.",1,11.423624200047925,368,60
+12,central,4,central_analyst,512561340,0.58,"The signals 'NO' with reliability 0.7 and 0.55, and 'YES' with reliability 0.75 and 0.65 provide slightly more weight to 'YES', leading to a probability of 0.58.",1,12.63582960003987,399,66
+12,central,5,central_analyst,190440540,0.67,"The signals 'NO' with reliability 0.7 and 0.55, and 'YES' with reliability 0.75, 0.65, and 0.6 provide more weight to 'YES', leading to a probability of 0.67.",1,13.78162030002568,424,71
+12,ensemble,1,agent_1,1189781028,0.56,The private signal 'NO' with reliability 0.7 reduces the prior probability of YES from 0.7 to 0.56.,1,7.85187519993633,254,42
+12,ensemble,2,agent_4,516474355,0.8125,The private signal with reliability 0.75 updates the prior probability of 0.7 to 0.8125 using Bayesian reasoning.,1,7.6493939000647515,255,45
+12,ensemble,3,agent_2,35015700,0.62,The private signal 'NO' with reliability 0.55 slightly reduces the prior probability from 0.7 to 0.62.,1,7.286545700044371,255,42
+12,ensemble,4,agent_5,512561340,0.77,The private signal with reliability 0.65 increases the probability of YES from the prior 0.7 to 0.77.,1,7.2071071999380365,255,41
+12,ensemble,5,agent_3,190440540,0.78,The private signal with reliability 0.6 increases the probability of YES from the prior 0.7 to 0.78.,1,7.029158600023948,254,40
+12,market,1,agent_1,1189781028,0.63,The private signal 'NO' with reliability 0.7 reduces the prior probability of YES from 0.7 to 0.63.,1,10.754896399914287,357,42
+12,market,2,agent_4,516474355,0.76,The public price history and private signal update the prior belief using the reliability of the signal and the observed price movement.,1,8.80481050000526,394,35
+12,market,3,agent_2,35015700,0.72,"The public price history suggests a gradual increase in belief towards YES, and my private signal of NO with reliability 0.55 slightly reduces the probability from the prior of 0.7.",1,11.368223399971612,431,51
+12,market,4,agent_5,512561340,0.81,"The current price of 0.72 reflects prior trades, and my private signal of reliability 0.65 for YES updates this to a higher probability.",1,11.470458800089546,468,45
+12,market,5,agent_3,190440540,0.86,The current price reflects prior trades and my private signal updates the prior probability with reliability-adjusted evidence.,1,10.802267899969593,504,32
+13,central,1,central_analyst,2088979978,0.7,A signal with reliability 0.7 indicates the outcome is YES with probability 0.7.,1,6.998374899965711,283,31
+13,central,2,central_analyst,2020321417,0.81,"Two signals, one with reliability 0.7 and another with reliability 0.55, both indicate YES, updating the probability from 0.7 to 0.81.",1,9.732336599961855,330,51
+13,central,3,central_analyst,677087711,0.88,"Three signals with reliabilities 0.7, 0.55, and 0.6 all indicate YES, updating the probability from 0.81 to 0.88.",1,10.609946099924855,369,53
+13,central,4,central_analyst,1626544024,0.93,"Four signals with reliabilities 0.7, 0.55, 0.6, and 0.65 all indicate YES, updating the probability from 0.88 to 0.93.",1,11.716371399932541,391,59
+13,central,5,central_analyst,1749796645,0.98,"Five signals with reliabilities 0.7, 0.55, 0.6, 0.65, and 0.75 all indicate YES, updating the probability from 0.93 to 0.98.",1,12.981472300016321,417,65
+13,ensemble,1,agent_5,2088979978,0.76,The private signal with reliability 0.7 updates the prior probability of 0.5 to 0.76 using Bayesian reasoning.,1,7.643194200005382,254,40
+13,ensemble,2,agent_3,2020321417,0.635,The private signal with reliability 0.55 updates the prior probability of 0.5 to approximately 0.635.,1,7.1891104999231175,255,41
+13,ensemble,3,agent_1,677087711,0.6923,The private signal with reliability 0.6 updates the prior probability of 0.5 to approximately 0.6923 using Bayesian reasoning.,1,7.666365000070073,254,45
+13,ensemble,4,agent_4,1626544024,0.73,"The private signal with reliability 0.65 updates the prior probability of 0.5 towards YES, resulting in a posterior probability of approximately 0.73.",1,7.839935000054538,255,47
+13,ensemble,5,agent_2,1749796645,0.714,The private signal with reliability 0.75 updates the prior probability of 0.5 to approximately 0.714 using Bayesian reasoning.,1,7.547372200060636,255,44
+13,market,1,agent_5,2088979978,0.76,The private signal with reliability 0.7 updates the prior probability of 0.5 to 0.76.,1,10.262644600006752,357,37
+13,market,2,agent_3,2020321417,0.81,"The public price history suggests a prior belief of 0.76, and my private signal with reliability 0.55 updates this to a higher probability.",1,9.90502910001669,394,45
+13,market,3,agent_1,677087711,0.85,"The public price history suggests increasing confidence, and my private signal with reliability 0.6 supports the YES outcome.",1,9.535803299979307,430,35
+13,market,4,agent_4,1626544024,0.89,"The current price of 0.85 reflects prior trades, and my private signal of reliability 0.65 for YES updates this to a higher probability.",1,11.382555300020613,467,45
+13,market,5,agent_2,1749796645,0.92,"The public price history suggests increasing confidence, and the private signal with reliability 0.75 supports the YES outcome.",1,11.224847599980421,504,36
+14,central,1,central_analyst,1128258139,0.58,The signal 'YES' from a reliable agent increases the probability from the prior of 0.4 to 0.58.,1,7.922857900033705,284,39
+14,central,2,central_analyst,1699678608,0.52,"The combined signals from agents 3 and 5, with reliability 0.75 and 0.55 respectively, update the probability from the prior of 0.4 to 0.52.",1,10.496526999981143,339,56
+14,central,3,central_analyst,1690101161,0.63,"The combined signals from agents 2, 3, and 5, with reliabilities 0.7, 0.75, and 0.55 respectively, update the probability from the prior of 0.4 to 0.63.",1,12.255666200071573,375,67
+14,central,4,central_analyst,979715922,0.58,"The combined signals from agents 2, 3, 4, and 5, with reliabilities 0.7, 0.75, 0.6, and 0.55 respectively, update the probability from the prior of 0.4 to 0.58.",1,13.736246600048617,405,75
+14,central,5,central_analyst,1848825486,0.52,"The signals from agents 1-5, with reliabilities 0.65, 0.55, 0.7, 0.6, and 0.75 respectively, update the prior of 0.4 to 0.52.",1,13.659634099924006,433,69
+14,ensemble,1,agent_3,1128258139,0.65,"The private signal with reliability 0.75 updates the prior probability of 0.4 towards YES, resulting in a posterior probability of 0.65.",1,8.369374200003222,255,46
+14,ensemble,2,agent_5,1699678608,0.34,The private signal 'NO' with reliability 0.55 reduces the probability from the prior 0.4 to 0.34.,1,7.323149999952875,255,42
+14,ensemble,3,agent_2,1690101161,0.67,The private signal with reliability 0.7 increases the probability of YES from the prior 0.4 to 0.67.,1,7.037646000040695,254,40
+14,ensemble,4,agent_4,979715922,0.55,The private signal 'NO' with reliability 0.6 reduces the probability from the prior 0.4 to 0.55.,1,7.145123199908994,254,41
+14,ensemble,5,agent_1,1848825486,0.36,The private signal 'NO' with reliability 0.65 reduces the probability from the prior 0.4 to 0.36.,1,7.320015500066802,255,42
+14,market,1,agent_3,1128258139,0.65,The private signal with reliability 0.75 updates the prior probability of 0.4 to 0.65.,1,10.390485599986278,358,38
+14,market,2,agent_5,1699678608,0.55,"The private signal indicates 'NO' with reliability 0.55, adjusting the prior probability of 0.4 downward.",1,9.17114390002098,395,38
+14,market,3,agent_2,1690101161,0.68,"The public price history suggests a shift from 0.65 to 0.55, indicating some traders' private signals leaned towards NO, but the current price of 0.55 combined with my private YES signal of reliability 0.7 leads to a calibrated probability of 0.68.",1,13.678059600060806,431,82
+14,market,4,agent_4,979715922,0.55,"The private signal indicates 'NO' with reliability 0.6, and the public price history suggests a moderate shift toward 'NO' with reliability adjustments.",1,10.178766200086102,467,43
+14,market,5,agent_1,1848825486,0.52,"The private signal indicates NO with reliability 0.65, and the public price history suggests a mixed trend with recent prices around 0.55, leading to a moderate adjustment from the prior of 0.4.",1,11.676235200022347,504,58
+15,central,1,central_analyst,209160116,0.7,"The signal with reliability 0.7 indicates YES, so the probability is updated to match the signal's reliability.",1,6.88852339994628,283,34
+15,central,2,central_analyst,1810469361,0.52,The combined evidence from two signals with reliabilities 0.7 and 0.6 leads to a calibrated probability of approximately 0.52.,1,8.128485400113277,332,43
+15,central,3,central_analyst,2032347216,0.61,"The combined evidence from three signals with reliabilities 0.7, 0.6, and 0.65, with two YES and one NO, leads to a calibrated probability of approximately 0.61.",1,10.016848400002345,361,58
+15,central,4,central_analyst,1131870943,0.78,"The combined evidence from four signals with reliabilities 0.7, 0.6, 0.65, and 0.75, with three YES and one NO, leads to a calibrated probability of approximately 0.78.",1,11.438563599949703,396,64
+15,central,5,central_analyst,745432030,0.82,"The combined evidence from five signals with reliabilities 0.7, 0.6, 0.65, 0.75, and 0.55, with four YES and one NO, leads to a calibrated probability of approximately 0.82.",1,12.805709499982186,422,76
+15,ensemble,1,agent_1,209160116,0.77,"The private signal with reliability 0.7 updates the prior probability of 0.7 towards YES, resulting in a posterior probability of 0.77.",1,7.669394199969247,254,45
+15,ensemble,2,agent_4,1810469361,0.68,The private signal 'NO' with reliability 0.6 reduces the prior probability of YES from 0.7 to 0.68.,1,6.831117799971253,254,42
+15,ensemble,3,agent_2,2032347216,0.77,"The private signal with reliability 0.65 updates the prior probability of 0.7 towards YES, resulting in a posterior probability of approximately 0.77.",1,7.3235035999678075,255,47
+15,ensemble,4,agent_5,1131870943,0.8125,"The private signal with reliability 0.75 updates the prior probability of 0.7 towards YES, resulting in a posterior probability of 0.8125.",1,7.544140100013465,255,50
+15,ensemble,5,agent_3,745432030,0.77,"The private signal with reliability 0.55 updates the prior probability of 0.7 towards YES, resulting in a posterior probability of 0.77.",1,7.3842165999813005,255,46
+15,market,1,agent_1,209160116,0.84,"The prior belief of 0.7 is updated by a private signal with reliability 0.7, leading to a combined probability of 0.84.",1,10.323432800010778,357,45
+15,market,2,agent_4,1810469361,0.76,"The public price history suggests a strong prior belief in YES, but my private signal of NO with reliability 0.6 adjusts the estimate downward.",1,8.692940899985842,393,41
+15,market,3,agent_2,2032347216,0.81,"The public price history suggests a gradual decrease in confidence, but the private signal with reliability 0.65 supports the YES outcome, leading to an updated probability of 0.81.",1,10.220677600009367,430,51
+15,market,4,agent_5,1131870943,0.86,"The current price reflects prior trades, and my private signal of reliability 0.75 supports a higher probability than the current price.",1,9.732433299999684,467,39
+15,market,5,agent_3,745432030,0.86,The current price reflects prior trades and my private signal with reliability 0.55 updates the prior probability of 0.7 to 0.86.,1,11.087600099970587,504,45
+16,central,1,central_analyst,1733435652,0.67,"The signal with reliability 0.55 supports the YES outcome, updating the prior probability from 0.6 to 0.67.",1,7.682661299942993,284,42
+16,central,2,central_analyst,495527346,0.58,"The signals with reliability 0.55 and 0.65 provide conflicting evidence, leading to a balanced probability update from 0.6 to 0.58.",1,9.05717399995774,342,49
+16,central,3,central_analyst,1781475580,0.58,"The signals with reliability 0.55, 0.65, and 0.6 provide mixed evidence, balancing the probability around 0.58.",1,9.190968699986115,368,47
+16,central,4,central_analyst,1420154651,0.69,"The signals with reliability 0.55, 0.65, 0.6, and 0.7 provide a mix of YES and NO evidence, with higher reliability signals leaning toward YES, raising the probability to 0.69.",1,10.865663800039329,385,65
+16,central,5,central_analyst,235955267,0.82,"Higher reliability signals predominantly indicate YES, with the most reliable agents supporting YES, leading to an updated probability of 0.82.",1,9.312513099983335,423,39
+16,ensemble,1,agent_5,1733435652,0.73,"The private signal with reliability 0.55 updates the prior probability of 0.6 towards YES, resulting in a posterior probability of approximately 0.73.",1,7.79254429996945,255,47
+16,ensemble,2,agent_3,495527346,0.56,The private signal 'NO' with reliability 0.65 reduces the prior probability of YES from 0.6 to 0.56.,1,6.9955684000160545,255,43
+16,ensemble,3,agent_4,1781475580,0.74,The private signal with reliability 0.6 updates the prior probability of 0.6 to a posterior probability of approximately 0.74.,1,6.83892599993851,254,42
+16,ensemble,4,agent_1,1420154651,0.77,The private signal with reliability 0.7 increases the probability of YES from the prior 0.6 to 0.77.,1,6.626293400069699,254,40
+16,ensemble,5,agent_2,235955267,0.8125,The private signal with reliability 0.75 updates the prior probability of 0.6 to 0.8125 using Bayesian reasoning.,1,7.198650300037116,255,45
+16,market,1,agent_5,1733435652,0.77,"The public price of 0.6 reflects prior information, and my private signal with reliability 0.55 updates this to a posterior probability of 0.77.",1,10.349217400071211,358,48
+16,market,2,agent_3,495527346,0.68,The public price history and private signal suggest a moderate update from the prior probability towards NO.,1,7.75384599994868,395,30
+16,market,3,agent_4,1781475580,0.74,"The public price history suggests a gradual adjustment toward the private signal's reliability, combining prior belief with the signal's influence.",1,8.921030099969357,431,36
+16,market,4,agent_1,1420154651,0.78,"The current price of 0.74 reflects prior trades, and my private signal of reliability 0.7 for YES updates this to 0.78.",1,11.105579600087367,467,52
+16,market,5,agent_2,235955267,0.84,The private signal with reliability 0.75 and the public price history suggest a higher probability of YES than the current price of 0.78.,1,10.94932630006224,504,44
+17,central,1,central_analyst,1594667213,0.6,"A signal with reliability 0.6 indicates YES, updating the prior probability from 0.5 to 0.6.",1,7.361410400015302,283,37
+17,central,2,central_analyst,143506193,0.48,"Two signals with reliability 0.6 and 0.65 indicate YES and NO respectively, leading to a calibrated probability of 0.48.",1,8.383990000002086,336,44
+17,central,3,central_analyst,791098583,0.57,"Three signals with reliability 0.6, 0.65, and 0.7 indicate YES, NO, and YES respectively, leading to a calibrated probability of 0.57.",1,9.668958200025372,362,53
+17,central,4,central_analyst,1341905825,0.58,"Four signals with reliabilities 0.6, 0.65, 0.7, and 0.55 indicate YES, NO, YES, and NO respectively, leading to a calibrated probability of 0.58.",1,10.924371500033885,391,62
+17,central,5,central_analyst,623025053,0.68,"Five signals with reliabilities 0.6, 0.65, 0.7, 0.55, and 0.75 indicate YES, NO, YES, NO, and YES respectively, leading to a calibrated probability of 0.68.",1,12.147331699961796,420,70
+17,ensemble,1,agent_2,1594667213,0.6923,The private signal with reliability 0.6 updates the prior probability of 0.5 to approximately 0.6923 using Bayesian reasoning.,1,7.680211400031112,254,45
+17,ensemble,2,agent_5,143506193,0.57,The private signal 'NO' with reliability 0.65 reduces the probability of YES from 0.5 to 0.57.,1,6.897466599941254,255,42
+17,ensemble,3,agent_1,791098583,0.76,The private signal with reliability 0.7 updates the prior probability of 0.5 to 0.76 using Bayesian reasoning.,1,6.701702299993485,254,40
+17,ensemble,4,agent_4,1341905825,0.46,The private signal 'NO' with reliability 0.55 updates the prior probability from 0.5 to approximately 0.46.,1,6.893736599944532,255,42
+17,ensemble,5,agent_3,623025053,0.714,The private signal with reliability 0.75 updates the prior probability of 0.5 to approximately 0.714 using Bayesian reasoning.,1,7.260830600047484,255,44
+17,market,1,agent_2,1594667213,0.65,The private signal with reliability 0.6 updates the prior probability of 0.5 to 0.65.,1,9.346948100021109,357,37
+17,market,2,agent_5,143506193,0.59,"The public price history suggests a prior belief of 0.65, adjusted downward by the private signal reliability of 0.65 to reflect a more cautious estimate.",1,9.33012920001056,394,47
+17,market,3,agent_1,791098583,0.67,"The private signal of reliability 0.7 supports YES, and the public price history suggests a gradual adjustment toward lower probabilities, indicating some traders' private signals may have influenced the market.",1,10.064374099951237,430,49
+17,market,4,agent_4,1341905825,0.61,"The public price history suggests a gradual shift toward NO, and the private signal of reliability 0.55 supports this, adjusting the prior of 0.5 toward the observed trend.",1,11.546843399992213,467,56
+17,market,5,agent_3,623025053,0.72,The private signal with reliability 0.75 and the public price history suggest a moderate increase in probability towards YES.,1,10.268946400028653,504,36
+18,central,1,central_analyst,229274181,0.4286,The signal 'NO' with reliability 0.75 updates the prior probability of 0.3 using Bayes' theorem.,1,7.673782300087623,284,41
+18,central,2,central_analyst,792600030,0.5294,The signals 'NO' with reliability 0.75 and 'YES' with reliability 0.55 update the prior probability of 0.3 using Bayes' theorem.,1,9.191776299965568,341,52
+18,central,3,central_analyst,1096188054,0.6235,"The signals 'NO' with reliability 0.75, 'YES' with reliability 0.55, and 'YES' with reliability 0.6 update the prior probability of 0.3 using Bayes' theorem.",1,10.749763300060295,371,63
+18,central,4,central_analyst,2093440309,0.742,"The signals 'NO' with reliability 0.75, 'YES' with reliability 0.55, 'YES' with reliability 0.6, and 'YES' with reliability 0.65 update the prior probability of 0.3 using Bayes' theorem.",1,12.184803699958138,402,73
+18,central,5,central_analyst,1680102173,0.624,"The signals 'NO' with reliability 0.75, 'YES' with reliability 0.55, 'YES' with reliability 0.6, 'YES' with reliability 0.65, and 'NO' with reliability 0.7 update the prior probability of 0.3 using Bayes' theorem.",1,13.91996129998006,431,83
+18,ensemble,1,agent_5,229274181,0.43,The private signal 'NO' with reliability 0.75 reduces the probability from the prior 0.3 to 0.43.,1,7.467074500047602,255,42
+18,ensemble,2,agent_3,792600030,0.59,"The private signal with reliability 0.55 updates the prior probability of 0.3 towards YES, resulting in a posterior probability of approximately 0.59.",1,7.3957506999140605,255,47
+18,ensemble,3,agent_1,1096188054,0.55,The private signal with reliability 0.6 updates the prior probability of 0.3 to 0.55 using Bayesian reasoning.,1,6.6563630000455305,254,40
+18,ensemble,4,agent_2,2093440309,0.55,The private signal with reliability 0.65 updates the prior probability of 0.3 to 0.55.,1,6.529243899974972,255,38
+18,ensemble,5,agent_4,1680102173,0.476,The private signal 'NO' with reliability 0.7 reduces the probability of YES from the prior 0.3 to 0.476.,1,7.061579800094478,254,45
+18,market,1,agent_5,229274181,0.25,"The private signal indicates NO with reliability 0.75, adjusting the prior probability of 0.3 downward.",1,9.275620299973525,358,36
+18,market,2,agent_3,792600030,0.44,"The public price history suggests a prior belief of 0.3, and the private signal with reliability 0.55 updates this to 0.44.",1,9.207601899979636,395,46
+18,market,3,agent_1,1096188054,0.62,"The public price history suggests increasing confidence, and the private signal adds moderate reliability to the YES outcome.",1,9.186443599988706,431,38
+18,market,4,agent_2,2093440309,0.72,"The current price of 0.62 reflects prior trades, and my private signal of reliability 0.65 for YES updates this to a higher probability.",1,10.877875000005588,468,51
+18,market,5,agent_4,1680102173,0.58,"The private signal indicates NO with reliability 0.7, and the public price history suggests a gradual increase in probability, adjusting the estimate toward 0.58.",1,11.03963949996978,504,46
+19,central,1,central_analyst,1597176315,0.55,"The signal with reliability 0.7 indicates YES, updating the prior probability from 0.3 to 0.55.",1,7.43595810001716,283,39
+19,central,2,central_analyst,119392052,0.46,"The signals with reliability 0.7 and 0.75 indicate conflicting outcomes, updating the prior probability from 0.3 to 0.46.",1,9.186872300109826,338,52
+19,central,3,central_analyst,495762199,0.54,"The signals with reliability 0.7, 0.75, and 0.6 provide mixed evidence, leading to an updated probability of 0.54 from the prior of 0.3.",1,9.919813299900852,364,56
+19,central,4,central_analyst,669499295,0.58,"The signals with reliability 0.7, 0.75, 0.6, and 0.55 provide mixed evidence, leading to an updated probability of 0.58 from the prior of 0.3.",1,11.193653099937364,394,62
+19,central,5,central_analyst,1251151077,0.48,"The signals with reliability 0.7, 0.75, 0.6, 0.55, and 0.65 provide mixed evidence, with more NO signals from higher reliability agents, leading to a revised probability of 0.48.",1,12.734863599995151,420,75
+19,ensemble,1,agent_5,1597176315,0.67,The private signal with reliability 0.7 increases the probability of YES from the prior 0.3 to 0.67.,1,7.181867599952966,254,40
+19,ensemble,2,agent_3,119392052,0.4375,The private signal 'NO' with reliability 0.75 updates the prior probability of 0.3 using Bayes' theorem.,1,6.9036312000826,255,42
+19,ensemble,3,agent_2,495762199,0.43,The private signal 'NO' with reliability 0.6 reduces the prior probability of YES from 0.3 to 0.43.,1,6.73256329994183,254,42
+19,ensemble,4,agent_4,669499295,0.57,"The private signal with reliability 0.55 updates the prior probability of 0.3 towards YES, resulting in a posterior probability of approximately 0.57.",1,7.430615699966438,255,47
+19,ensemble,5,agent_1,1251151077,0.41,The private signal 'NO' with reliability 0.65 reduces the probability from the prior 0.3 to 0.41.,1,6.870907700038515,255,42
+19,market,1,agent_5,1597176315,0.58,The private signal with reliability 0.7 updates the prior probability of 0.3 to 0.58 using Bayesian reasoning.,1,9.732355199987069,357,40
+19,market,2,agent_3,119392052,0.52,"The public price history and private signal suggest a moderate probability shift towards NO, adjusting the prior belief.",1,7.946260400000028,394,32
+19,market,3,agent_2,495762199,0.46,The public price history and private signal suggest a moderate probability leaning towards NO due to the private signal's reliability and the recent price adjustments.,1,9.071330199949443,430,39
+19,market,4,agent_4,669499295,0.59,The private signal reliability of 0.55 and the public price history suggest a moderate update toward YES.,1,9.988613700028509,467,40
+19,market,5,agent_1,1251151077,0.44,"The private signal indicates NO with reliability 0.65, and the public price history suggests a downward trend with mixed reliability adjustments.",1,10.458646500017494,504,39
+20,central,1,central_analyst,856117358,0.77,"The signal with reliability 0.55 supports the YES outcome, updating the prior probability from 0.7 to 0.77.",1,7.638544399989769,284,42
+20,central,2,central_analyst,1931351402,0.68,"The signals with reliability 0.55 and 0.6 provide mixed evidence, adjusting the probability from 0.7 to 0.68.",1,8.672051400062628,341,45
+20,central,3,central_analyst,1780751649,0.56,"The signals with reliability 0.55, 0.6, and 0.7 provide mixed evidence, adjusting the probability from 0.7 to 0.56.",1,9.458541200030595,363,51
+20,central,4,central_analyst,1135440223,0.58,"The signals with reliability 0.55, 0.6, 0.65, and 0.7 provide mixed evidence, slightly favoring NO over YES.",1,9.802058200002648,389,49
+20,central,5,central_analyst,2080805339,0.68,"The signals with reliability 0.55, 0.6, 0.65, 0.7, and 0.75 provide mixed evidence, with slightly more support for YES than NO.",1,11.216686100000516,407,63
+20,ensemble,1,agent_1,856117358,0.77,"The private signal with reliability 0.55 updates the prior probability of 0.7 towards YES, resulting in a posterior probability of 0.77.",1,7.774624899961054,255,46
+20,ensemble,2,agent_3,1931351402,0.66,The private signal 'NO' with reliability 0.6 reduces the prior probability of YES from 0.7 to 0.66.,1,6.75461780000478,254,42
+20,ensemble,3,agent_5,1780751649,0.63,The private signal 'NO' with reliability 0.7 reduces the prior probability of YES from 0.7 to 0.63.,1,6.898759500007145,254,42
+20,ensemble,4,agent_2,1135440223,0.81,The private signal with reliability 0.65 increases the probability of YES from the prior 0.7 to 0.81.,1,6.727685099933296,255,41
+20,ensemble,5,agent_4,2080805339,0.8125,"The private signal with reliability 0.75 updates the prior probability of 0.7 towards YES, resulting in a posterior probability of 0.8125.",1,7.700144600006752,255,50
+20,market,1,agent_1,856117358,0.82,"The public price of 0.7 reflects prior information, and the private signal with reliability 0.55 increases the probability to 0.82.",1,8.438045999966562,358,45
+20,market,2,agent_3,1931351402,0.74,"The public price history suggests a strong prior belief in YES, but my private signal of NO with reliability 0.6 adjusts the estimate downward.",1,8.71628699998837,394,41
+20,market,3,agent_5,1780751649,0.68,"The private signal 'NO' with reliability 0.7 adjusts the prior 0.7 downward, while the public price history suggests a moderate shift toward 'NO'.",1,9.936859000008553,430,47
+20,market,4,agent_2,1135440223,0.76,"The current price reflects prior trades, and my private signal of reliability 0.65 supports a higher probability than the current price.",1,10.448192600044422,467,45
+20,market,5,agent_4,2080805339,0.82,"The current price of 0.76 reflects prior trades, and my private signal of reliability 0.75 for YES updates this to 0.82.",1,11.20426679996308,504,47
+21,central,1,central_analyst,527986077,0.6667,The signal 'NO' with reliability 0.6 reduces the probability from the prior 0.7 to 0.6667 using Bayes' theorem.,1,8.496987999998964,283,49
+21,central,2,central_analyst,289957579,0.75,The signals 'YES' with reliability 0.75 and 'NO' with reliability 0.6 update the probability from the prior 0.7 to 0.75 using Bayes' theorem.,1,9.695534500060603,348,56
+21,central,3,central_analyst,1349087270,0.68,"The signals 'YES' with reliability 0.75 and 'NO' with reliability 0.6, along with the 'NO' signal with reliability 0.55, update the probability from the prior 0.7 to approximately 0.68 using Bayes' theorem.",1,11.692647799965926,375,73
+21,central,4,central_analyst,803285677,0.54,"The combination of signals 'NO' with reliability 0.6, 0.55, and 0.65, along with the 'YES' signal with reliability 0.75, updates the probability from the prior 0.7 to approximately 0.54 using Bayes' theorem.",1,12.753271299996413,412,77
+21,central,5,central_analyst,165870659,0.42,The combination of all visible signals updates the probability from the prior 0.7 to approximately 0.42 using Bayes' theorem.,1,9.769704599981196,435,41
+21,ensemble,1,agent_5,527986077,0.66,The private signal 'NO' with reliability 0.6 reduces the prior probability of YES from 0.7 to 0.66.,1,7.392915199976414,254,42
+21,ensemble,2,agent_4,289957579,0.8125,"The private signal with reliability 0.75 updates the prior probability of 0.7 towards YES, resulting in a posterior probability of 0.8125.",1,7.7526911000022665,255,50
+21,ensemble,3,agent_2,1349087270,0.63,The private signal 'NO' with reliability 0.55 reduces the prior probability of YES from 0.7 to 0.63.,1,6.996684900019318,255,43
+21,ensemble,4,agent_3,803285677,0.66,The private signal 'NO' with reliability 0.65 reduces the prior probability of YES from 0.7 to 0.66.,1,6.938855099957436,255,43
+21,ensemble,5,agent_1,165870659,0.62,The private signal 'NO' with reliability 0.7 reduces the prior probability of YES from 0.7 to 0.62.,1,6.784562099957839,254,42
+21,market,1,agent_5,527986077,0.64,The private signal 'NO' with reliability 0.6 adjusts the prior probability of 0.7 downward to 0.64.,1,9.7506758000236,357,41
+21,market,2,agent_4,289957579,0.76,The public price history and private signal update the prior belief using the reliability of the signal and the observed market movement.,1,8.115817099926062,394,35
+21,market,3,agent_2,1349087270,0.71,"The public price history suggests increasing confidence, and my private signal of reliability 0.55 for NO slightly reduces the probability from the prior 0.7.",1,9.755761399981566,431,45
+21,market,4,agent_3,803285677,0.67,"The private signal indicates NO with reliability 0.65, and the public price history suggests a moderate shift toward YES, leading to a calibrated estimate of 0.67.",1,10.976051099947654,468,49
+21,market,5,agent_1,165870659,0.62,"The public price history suggests a gradual shift toward NO, and my private signal of reliability 0.7 indicates a moderate inclination toward NO, adjusting the prior of 0.7 downward.",1,11.725224700057879,504,50
+22,central,1,central_analyst,1964599414,0.775,"The signal with reliability 0.75 supports the YES outcome, updating the prior probability from 0.7 to 0.775.",1,8.039787800051272,284,44
+22,central,2,central_analyst,1021786029,0.825,"Two signals with reliability 0.75 and 0.7 support the YES outcome, updating the prior probability from 0.7 to 0.825.",1,9.08481460006442,343,49
+22,central,3,central_analyst,757329269,0.765,"Three signals with reliabilities 0.75, 0.7, and 0.6 support the YES and NO outcomes, updating the prior probability from 0.7 to 0.765.",1,10.091485099983402,367,58
+22,central,4,central_analyst,328161004,0.789,"Four signals with reliabilities 0.75, 0.7, 0.6, and 0.55 support the YES and NO outcomes, updating the prior probability from 0.7 to 0.789.",1,11.254271199926734,396,64
+22,central,5,central_analyst,1279452122,0.823,"Five signals with reliabilities 0.75, 0.7, 0.6, 0.55, and 0.65 support the YES outcome, updating the prior probability from 0.7 to 0.823.",1,12.029604199924506,422,68
+22,ensemble,1,agent_4,1964599414,0.8125,"The private signal with reliability 0.75 updates the prior probability of 0.7 towards YES, resulting in a posterior probability of 0.8125.",1,8.143171299947426,255,50
+22,ensemble,2,agent_5,1021786029,0.82,The private signal with reliability 0.7 increases the probability of YES from the prior 0.7 to 0.82.,1,6.612150700064376,254,40
+22,ensemble,3,agent_3,757329269,0.66,The private signal 'NO' with reliability 0.6 reduces the prior probability of YES from 0.7 to 0.66.,1,6.856889000046067,254,42
+22,ensemble,4,agent_1,328161004,0.77,"The private signal with reliability 0.55 updates the prior probability of 0.7 towards YES, resulting in a posterior probability of 0.77.",1,7.211323800031096,255,46
+22,ensemble,5,agent_2,1279452122,0.81,The private signal with reliability 0.65 increases the probability of YES from the prior 0.7 to 0.81.,1,6.774098500027321,255,41
+22,market,1,agent_4,1964599414,0.85,"The private signal with reliability 0.75 updates the prior probability of 0.7 towards YES, resulting in a calibrated estimate of 0.85.",1,10.250869999988936,358,46
+22,market,2,agent_5,1021786029,0.91,The public price history and private signal update the prior belief using the reliability of the signal and the observed price movement.,1,8.283427500049584,394,35
+22,market,3,agent_3,757329269,0.82,"The public price history suggests increasing confidence, and my private signal of reliability 0.6 indicates a moderate inclination towards NO, adjusting the prior of 0.7 downward.",1,9.924495900049806,430,47
+22,market,4,agent_1,328161004,0.86,"The current price reflects prior trades, and my private signal of reliability 0.55 supports a moderate increase in probability from the prior of 0.7.",1,10.454682099982165,467,45
+22,market,5,agent_2,1279452122,0.89,"The public price history suggests a gradual adjustment toward the current price of 0.86, and my private signal of reliability 0.65 supports a moderate increase in probability.",1,11.480074399965815,504,49
+23,central,1,central_analyst,1499821257,0.45,"A signal with reliability 0.55 indicates NO, reducing the probability from 0.5 to 0.45.",1,7.5712772000115365,284,39
+23,central,2,central_analyst,680114404,0.32,"Two signals with reliability 0.55 and 0.65 indicate NO, updating the probability from 0.45 to 0.32.",1,8.759215499972925,339,46
+23,central,3,central_analyst,1854378418,0.52,"Three signals with reliabilities 0.55, 0.65, and 0.7 indicate NO and YES, respectively, leading to an updated probability of 0.52.",1,9.605669799959287,365,53
+23,central,4,central_analyst,637923548,0.63,"Four signals with reliabilities 0.55, 0.65, 0.7, and 0.75 indicate NO and YES, leading to an updated probability of 0.63.",1,10.577822499908507,392,57
+23,central,5,central_analyst,971530617,0.68,"Five signals with reliabilities 0.55, 0.65, 0.7, 0.75, and 0.6 indicate NO and YES, leading to an updated probability of 0.68.",1,11.501951500074938,415,62
+23,ensemble,1,agent_1,1499821257,0.46,The private signal 'NO' with reliability 0.55 reduces the probability from the prior 0.5 to approximately 0.46.,1,7.578992000082508,255,43
+23,ensemble,2,agent_3,680114404,0.56,The private signal 'NO' with reliability 0.65 reduces the probability of YES from 0.5 to 0.56.,1,6.9224737000186,255,42
+23,ensemble,3,agent_2,1854378418,0.76,The private signal with reliability 0.7 updates the prior probability of 0.5 to 0.76 using Bayesian reasoning.,1,6.678600499988534,254,40
+23,ensemble,4,agent_4,637923548,0.4286,The private signal 'NO' with reliability 0.75 updates the prior probability from 0.5 to approximately 0.4286 using Bayes' theorem.,1,7.7179983999812976,255,51
+23,ensemble,5,agent_5,971530617,0.57,The private signal 'NO' with reliability 0.6 reduces the probability of YES from 0.5 to 0.57.,1,6.718392299953848,254,41
+23,market,1,agent_1,1499821257,0.45,"The private signal indicates NO with reliability 0.55, adjusting the prior probability of 0.5 downward.",1,9.356201299931854,358,36
+23,market,2,agent_3,680114404,0.41,The public price history and private signal suggest a lower probability of YES due to the NO signal with reliability 0.65 and the current price reflecting prior information.,1,9.067748200031929,395,45
+23,market,3,agent_2,1854378418,0.58,"The private signal with reliability 0.7 suggests YES, and the public price history indicates a gradual adjustment toward lower probabilities, suggesting moderate evidence against YES.",1,9.531070599914528,431,43
+23,market,4,agent_4,637923548,0.42,"The private signal indicates 'NO' with reliability 0.75, and the public price history suggests a trend toward higher prices, indicating increased confidence in 'YES', which is adjusted downward based on the private signal.",1,11.961242699995637,468,62
+23,market,5,agent_5,971530617,0.44,"The private signal indicates NO with reliability 0.6, adjusting the current price of 0.42 downward while considering historical price movements and signal reliability.",1,11.037054700078443,504,44
+24,central,1,central_analyst,2119334469,0.52,"The signal with reliability 0.6 indicates YES, updating the prior probability from 0.4 to 0.52.",1,7.463257399969734,283,39
+24,central,2,central_analyst,363562373,0.46,"The signals with reliability 0.6 (YES) and 0.75 (NO) provide conflicting evidence, updating the prior probability from 0.4 to 0.46.",1,9.269318099948578,338,52
+24,central,3,central_analyst,29803804,0.42,"The signals with reliability 0.6 (YES), 0.7 (NO), and 0.75 (NO) provide more weight to NO evidence, updating the probability from 0.46 to 0.42.",1,10.735485900077038,370,62
+24,central,4,central_analyst,1083725020,0.52,"The signals with reliability 0.6 (YES), 0.7 (NO), 0.75 (NO), and 0.65 (YES) balance the evidence slightly in favor of YES, updating the probability from 0.42 to 0.52.",1,12.12693260004744,400,72
+24,central,5,central_analyst,1923133976,0.58,"The signals with reliability 0.6 (YES), 0.75 (NO), 0.7 (NO), 0.65 (YES), and 0.55 (NO) provide a slight edge to NO, updating the probability from 0.52 to 0.58.",1,13.190270100021735,430,78
+24,ensemble,1,agent_2,2119334469,0.6286,The private signal with reliability 0.6 updates the prior probability of 0.4 to approximately 0.6286 using Bayesian reasoning.,1,7.618743999977596,254,45
+24,ensemble,2,agent_4,363562373,0.3846,The private signal 'NO' with reliability 0.75 reduces the probability from the prior 0.4 to approximately 0.3846.,1,7.255346900084987,255,47
+24,ensemble,3,agent_1,29803804,0.52,The private signal 'NO' with reliability 0.7 reduces the prior probability of YES from 0.4 to 0.52.,1,6.919742199941538,254,42
+24,ensemble,4,agent_5,1083725020,0.623,The private signal with reliability 0.65 updates the prior probability of 0.4 to approximately 0.623 using Bayesian reasoning.,1,7.047705500037409,255,44
+24,ensemble,5,agent_3,1923133976,0.34,The private signal 'NO' with reliability 0.55 reduces the prior probability from 0.4 to 0.34.,1,6.794810999999754,255,41
+24,market,1,agent_2,2119334469,0.64,The private signal with reliability 0.6 updates the prior probability of 0.4 to 0.64.,1,9.346402400056832,357,37
+24,market,2,agent_4,363562373,0.55,"The public price history suggests a prior belief of 0.64, adjusted by my private signal of reliability 0.75 indicating 'NO'.",1,8.972779499948956,394,44
+24,market,3,agent_1,29803804,0.47,"The public price history suggests a gradual decrease in probability, and my private signal of reliability 0.7 indicates a NO倾向, leading to a moderate adjustment from the prior of 0.4.",1,10.311829500016756,430,52
+24,market,4,agent_5,1083725020,0.62,"The public price history suggests a gradual decrease in probability, while the private signal of reliability 0.65 supports the YES outcome, leading to a calibrated estimate of 0.62.",1,10.93031590001192,467,51
+24,market,5,agent_3,1923133976,0.52,"The private signal indicates NO with reliability 0.55, slightly counteracting the current price of 0.62, which reflects prior trades' aggregated evidence.",1,11.222807500045747,504,46
+25,central,1,central_analyst,1426151017,0.72,"The signal with reliability 0.6 supports the YES outcome, updating the prior probability from 0.6 to 0.72.",1,7.648386500077322,283,41
+25,central,2,central_analyst,2040966878,0.77,"Both signals with reliability 0.6 and 0.65 support the YES outcome, updating the prior probability from 0.6 to 0.77.",1,8.761584100080654,340,47
+25,central,3,central_analyst,504694052,0.82,"Three signals with reliabilities 0.6, 0.65, and 0.55 all support YES, updating the prior probability from 0.6 to 0.82.",1,9.857105600065552,366,54
+25,central,4,central_analyst,1699069905,0.68,"Four signals with reliabilities 0.6, 0.65, 0.55, and 0.75 are observed, with three supporting YES and one supporting NO, leading to an updated probability of 0.68.",1,11.117227399954572,393,64
+25,central,5,central_analyst,1695735335,0.73,"Five signals are observed with reliabilities 0.6, 0.65, 0.55, 0.75, and 0.7, with four supporting YES and one supporting NO, leading to an updated probability of 0.73.",1,12.144232899998315,422,69
+25,ensemble,1,agent_3,1426151017,0.75,"The private signal with reliability 0.6 supports the outcome YES, updating the prior probability from 0.6 to 0.75.",1,7.403450599987991,254,42
+25,ensemble,2,agent_1,2040966878,0.77,"The private signal with reliability 0.65 updates the prior probability of 0.6 towards YES, resulting in a posterior probability of approximately 0.77.",1,7.380517299985513,255,47
+25,ensemble,3,agent_2,504694052,0.72,"The private signal with reliability 0.55 updates the prior probability of 0.6 towards YES, resulting in a posterior probability of approximately 0.72.",1,7.370134299970232,255,47
+25,ensemble,4,agent_4,1699069905,0.56,The private signal 'NO' with reliability 0.75 reduces the prior probability of YES from 0.6 to 0.56.,1,6.9466803999384865,255,43
+25,ensemble,5,agent_5,1695735335,0.77,"The private signal with reliability 0.7 updates the prior probability of 0.6 towards YES, resulting in a posterior probability of approximately 0.77.",1,7.185198300052434,254,46
+25,market,1,agent_3,1426151017,0.78,The private signal with reliability 0.6 updates the prior probability of 0.6 to 0.78 using Bayesian reasoning.,1,9.723370599909686,357,40
+25,market,2,agent_1,2040966878,0.83,"The public price history suggests a prior belief of 0.78, and my private signal with reliability 0.65 updates this to a higher probability.",1,9.029283600044437,394,45
+25,market,3,agent_2,504694052,0.83,The current price reflects prior trades and my private signal aligns with the existing public forecast.,1,8.35523679992184,431,30
+25,market,4,agent_4,1699069905,0.65,"The current price reflects prior trades, and my private signal of reliability 0.75 indicates a NO, adjusting the estimate from the prior of 0.6.",1,10.265225899987854,468,52
+25,market,5,agent_5,1695735335,0.81,The private signal with reliability 0.7 and the public price history suggest a higher probability of YES than the current price of 0.65.,1,10.78994349995628,504,43
+26,central,1,central_analyst,1544008535,0.36,A reliability 0.55 signal of NO updates the prior probability from 0.4 to 0.36.,1,7.344178200000897,284,38
+26,central,2,central_analyst,1816402519,0.46,A reliability 0.65 signal of YES updates the prior probability from 0.4 to 0.46.,1,7.865711100050248,338,38
+26,central,3,central_analyst,870824006,0.62,"Three signals with reliabilities 0.55, 0.65, and 0.7 indicate a higher likelihood of YES, updating the probability from 0.4 to 0.62.",1,9.770897399983369,357,56
+26,central,4,central_analyst,772007644,0.78,"Four signals with reliabilities 0.55, 0.65, 0.7, and 0.75 indicate a higher likelihood of YES, updating the probability from 0.62 to 0.78.",1,11.299355800030753,395,63
+26,central,5,central_analyst,159803245,0.82,"Five signals with reliabilities 0.55, 0.65, 0.7, 0.75, and 0.6 indicate a higher likelihood of YES, updating the probability from 0.78 to 0.82.",1,12.988505200017244,421,74
+26,ensemble,1,agent_5,1544008535,0.34,The private signal 'NO' with reliability 0.55 reduces the probability from the prior 0.4 to 0.34.,1,7.7061514999950305,255,42
+26,ensemble,2,agent_3,1816402519,0.65,"The private signal with reliability 0.65 indicates YES, so the posterior probability is updated to match the signal's reliability.",1,6.398068000096828,255,38
+26,ensemble,3,agent_4,870824006,0.67,The private signal with reliability 0.7 updates the prior probability of 0.4 to 0.67 using Bayesian reasoning.,1,6.729705999954604,254,40
+26,ensemble,4,agent_1,772007644,0.65,The private signal with reliability 0.75 updates the prior probability of 0.4 to 0.65.,1,6.444152300013229,255,38
+26,ensemble,5,agent_2,159803245,0.6286,The private signal with reliability 0.6 updates the prior probability of 0.4 to a posterior probability of approximately 0.6286.,1,7.15082859992981,254,46
+26,market,1,agent_5,1544008535,0.35,"The private signal indicates NO with reliability 0.55, adjusting the prior probability of 0.4 downward.",1,9.25642400002107,358,36
+26,market,2,agent_3,1816402519,0.52,"The public price history suggests a prior belief of 0.4, and my private signal with reliability 0.65 updates this to a higher probability.",1,9.062529600108974,395,44
+26,market,3,agent_4,870824006,0.68,The private signal with reliability 0.7 and the public price history suggest a higher probability of YES than the prior 0.4.,1,9.323933899984695,431,40
+26,market,4,agent_1,772007644,0.76,The private signal with reliability 0.75 and the public price history suggest a moderate increase in probability towards YES.,1,10.060051799984649,468,42
+26,market,5,agent_2,159803245,0.82,The current price reflects prior trades and my private signal updates the estimate with reliability-adjusted weight.,1,9.673543700017035,504,31
+27,central,1,central_analyst,1016556067,0.4,The signal 'NO' with reliability 0.75 reduces the probability from the prior 0.4 to 0.4.,1,7.527286799973808,284,39
+27,central,2,central_analyst,1449131526,0.47,The signals 'NO' and 'YES' with reliabilities 0.75 and 0.65 respectively update the probability from the prior 0.4 to 0.47.,1,9.305257999920286,339,53
+27,central,3,central_analyst,1247094161,0.58,"The signals 'NO' and 'YES' with reliabilities 0.75, 0.65, and 0.55 respectively update the probability from the prior 0.4 to 0.58.",1,11.072691000066698,373,66
+27,central,4,central_analyst,1691476992,0.62,"The signals 'NO' and 'YES' with reliabilities 0.75, 0.65, 0.55, and 0.7 update the probability from the prior 0.4 to 0.62.",1,11.312562700011767,399,64
+27,central,5,central_analyst,668963228,0.68,"The signals 'NO' and 'YES' with reliabilities 0.75, 0.65, 0.55, 0.7, and 0.6 update the probability from the prior 0.4 to 0.68.",1,12.236574999988079,422,69
+27,ensemble,1,agent_3,1016556067,0.3469,The private signal 'NO' with reliability 0.75 reduces the probability of YES from the prior 0.4 to approximately 0.3469.,1,8.122714600060135,255,50
+27,ensemble,2,agent_4,1449131526,0.66,The private signal with reliability 0.65 updates the prior probability of 0.4 to a posterior probability of approximately 0.66.,1,6.932310199947096,255,43
+27,ensemble,3,agent_5,1247094161,0.62,The private signal with reliability 0.55 increases the probability of YES from the prior 0.4 to 0.62.,1,6.787555200047791,255,41
+27,ensemble,4,agent_2,1691476992,0.53,The private signal 'NO' with reliability 0.7 reduces the probability from the prior 0.4 to 0.53.,1,6.722501699929126,254,41
+27,ensemble,5,agent_1,668963228,0.6286,The private signal with reliability 0.6 updates the prior probability of 0.4 to approximately 0.6286 using Bayesian reasoning.,1,7.259026300045662,254,45
+27,market,1,agent_3,1016556067,0.35,"The private signal indicates NO with reliability 0.75, adjusting the prior probability of 0.4 downward.",1,9.230794199975207,358,36
+27,market,2,agent_4,1449131526,0.55,"The public price history suggests a prior belief of 0.4, and my private signal with reliability 0.65 updates this to a higher probability of 0.55.",1,9.578527600038797,395,50
+27,market,3,agent_5,1247094161,0.65,The public price history and private signal suggest a moderate increase in probability from the prior.,1,8.242890099994838,432,29
+27,market,4,agent_2,1691476992,0.52,"The private signal indicates NO with reliability 0.7, adjusting the prior of 0.4 downward, while the public price history suggests increasing confidence in YES.",1,10.339887000038289,468,45
+27,market,5,agent_1,668963228,0.68,The private signal with reliability 0.6 and the public price history suggest a moderate increase in probability towards YES.,1,10.10026380000636,504,35
+28,central,1,central_analyst,210737729,0.52,"The signal 'NO' with reliability 0.6 slightly decreases the probability from the prior 0.3, resulting in a calibrated estimate of 0.52.",1,8.283766800072044,283,47
+28,central,2,central_analyst,291716537,0.58,"The signals 'NO' with reliability 0.6 and 'YES' with reliability 0.55 provide mixed evidence, leading to a calibrated probability of 0.58.",1,9.159380899975076,346,50
+28,central,3,central_analyst,1333582472,0.67,"The signals 'YES' with reliability 0.55 and 0.65, and 'NO' with reliability 0.6 provide stronger support for YES, leading to a calibrated probability of 0.67.",1,10.304860000032932,369,59
+28,central,4,central_analyst,362387173,0.58,"The signals 'YES' with reliability 0.55 and 0.65, and 'NO' with reliability 0.6 and 0.75 provide balanced support, leading to a calibrated probability of 0.58.",1,11.127398000098765,398,63
+28,central,5,central_analyst,1288963631,0.67,"The signals show a majority leaning towards YES with higher reliability agents supporting YES, leading to an updated probability of 0.67.",1,9.233761099982075,421,39
+28,ensemble,1,agent_4,210737729,0.43,The private signal 'NO' with reliability 0.6 reduces the prior probability of YES from 0.3 to 0.43.,1,7.370884499978274,254,42
+28,ensemble,2,agent_1,291716537,0.52,The private signal with reliability 0.55 slightly increases the probability of YES from the prior of 0.3.,1,6.486473000026308,255,37
+28,ensemble,3,agent_5,1333582472,0.55,The private signal with reliability 0.65 updates the prior probability of 0.3 to 0.55.,1,6.708989199949428,255,38
+28,ensemble,4,agent_2,362387173,0.43,The private signal 'NO' with reliability 0.75 reduces the probability from the prior 0.3 to 0.43.,1,7.033119300031103,255,43
+28,ensemble,5,agent_3,1288963631,0.67,The private signal with reliability 0.7 updates the prior probability of 0.3 to approximately 0.67.,1,6.420340899960138,254,38
+28,market,1,agent_4,210737729,0.24,The private signal 'NO' with reliability 0.6 adjusts the prior probability of 0.3 downward to 0.24.,1,9.78837460000068,357,41
+28,market,2,agent_1,291716537,0.43,"The public price history suggests a prior of 0.3, and the private signal with reliability 0.55 updates this to a posterior of approximately 0.43.",1,9.6567363999784,394,49
+28,market,3,agent_5,1333582472,0.58,"The public price history suggests increasing confidence, and my private signal with reliability 0.65 adds moderate support to the YES outcome.",1,9.111926499987021,431,39
+28,market,4,agent_2,362387173,0.45,"The private signal indicates NO with reliability 0.75, while the public price history suggests a gradual increase in probability towards YES, balancing the signal and price trend.",1,10.40646869991906,468,46
+28,market,5,agent_3,1288963631,0.62,"The private signal of reliability 0.7 supports YES, and the public price history suggests a gradual shift toward higher probabilities, adjusting the prior of 0.3 accordingly.",1,11.418421200010926,504,47
+29,central,1,central_analyst,334644143,0.76,"The signal with reliability 0.6 supports the YES outcome, updating the prior probability from 0.7 to 0.76.",1,7.636398300062865,283,41
+29,central,2,central_analyst,207333501,0.82,"The two signals with reliability 0.6 and 0.7 both support the YES outcome, updating the prior probability from 0.7 to 0.82.",1,8.857241800054908,339,48
+29,central,3,central_analyst,1119847179,0.76,"The signals with reliability 0.6 and 0.7 support YES, while the signal with reliability 0.55 supports NO, leading to a revised probability of 0.76.",1,9.592450800002553,366,53
+29,central,4,central_analyst,514756062,0.82,"The signals with reliability 0.6, 0.7, and 0.75 support YES, while the signal with reliability 0.55 supports NO, leading to an updated probability of 0.82.",1,10.682453499990515,391,60
+29,central,5,central_analyst,1735172765,0.87,"The signals with reliability 0.6, 0.7, 0.75, and 0.65 support YES, while the signal with reliability 0.55 supports NO, leading to an updated probability of 0.87.",1,11.795412600040436,418,66
+29,ensemble,1,agent_5,334644143,0.77,"The private signal with reliability 0.6 updates the prior probability of 0.7 towards YES, resulting in a posterior probability of 0.77.",1,7.8172971999738365,254,45
+29,ensemble,2,agent_2,207333501,0.81,The private signal with reliability 0.7 increases the probability of YES from the prior 0.7 to 0.81.,1,6.733877599937841,254,40
+29,ensemble,3,agent_4,1119847179,0.66,The private signal 'NO' with reliability 0.55 reduces the prior probability from 0.7 to 0.66.,1,6.790635599987581,255,41
+29,ensemble,4,agent_3,514756062,0.81,"The private signal with reliability 0.75 updates the prior probability of 0.7 towards YES, resulting in a posterior probability of approximately 0.81.",1,7.295798400067724,255,47
+29,ensemble,5,agent_1,1735172765,0.81,"The private signal with reliability 0.65 updates the prior probability of 0.7 towards YES, resulting in a posterior probability of approximately 0.81.",1,7.321834200061858,255,47
+29,market,1,agent_5,334644143,0.82,"The private signal with reliability 0.6 updates the prior probability of 0.7 towards YES, resulting in a calibrated estimate of 0.82.",1,8.415588499978185,357,45
+29,market,2,agent_2,207333501,0.89,The public price history and my private signal with reliability 0.7 suggest a higher probability of YES than the current price of 0.82.,1,8.845704999985173,393,43
+29,market,3,agent_4,1119847179,0.81,"The public price history suggests a strong prior towards YES, adjusted by my private signal of reliability 0.55 indicating NO.",1,8.96899699990172,430,38
+29,market,4,agent_3,514756062,0.86,"The current price reflects prior trades, and my private signal of reliability 0.75 supports a higher probability than the current price.",1,10.70324729999993,467,45
+29,market,5,agent_1,1735172765,0.88,"The public price history and private signal suggest a moderate increase in probability from the prior, incorporating the reliability of the signal and recent market movements.",1,10.672640000004321,504,40
+30,central,1,central_analyst,930974206,0.55,"The signal with reliability 0.75 indicates YES, updating the prior probability from 0.3 to 0.55.",1,7.577224500011653,284,40
+30,central,2,central_analyst,1245975726,0.49,"The signals with reliability 0.75 (YES) and 0.65 (NO) provide conflicting information, leading to a balanced update from the prior probability of 0.3.",1,9.18520669999998,340,52
+30,central,3,central_analyst,1164114807,0.58,"The signals with reliability 0.75 (YES), 0.65 (NO), and 0.7 (NO) provide more weight to the NO signals, slightly increasing the probability from the prior of 0.3.",1,10.384307899978012,371,61
+30,central,4,central_analyst,603155690,0.68,"The signals with reliability 0.75 (YES), 0.65 (NO), 0.7 (NO), and 0.6 (NO) provide more weight to the NO signals, increasing the probability from the prior of 0.3.",1,11.500141100026667,399,67
+30,central,5,central_analyst,542583970,0.78,"The signals with reliability 0.75 (YES), 0.65 (NO), 0.7 (NO), 0.6 (NO), and 0.55 (NO) provide more weight to the NO signals, increasing the probability from the prior of 0.3.",1,12.867486100061797,425,75
+30,ensemble,1,agent_4,930974206,0.625,The private signal with reliability 0.75 updates the prior probability of 0.3 to 0.625 using Bayesian reasoning.,1,7.520546899992041,255,43
+30,ensemble,2,agent_1,1245975726,0.41,The private signal 'NO' with reliability 0.65 reduces the probability from the prior 0.3 to 0.41.,1,6.982545999926515,255,42
+30,ensemble,3,agent_5,1164114807,0.46,The private signal 'NO' with reliability 0.7 reduces the probability from the prior 0.3 to 0.46.,1,6.691759799956344,254,41
+30,ensemble,4,agent_2,603155690,0.4286,The private signal 'NO' with reliability 0.6 reduces the probability from the prior 0.3 to approximately 0.4286.,1,7.170176999992691,254,46
+30,ensemble,5,agent_3,542583970,0.26,The private signal 'NO' with reliability 0.55 reduces the probability from the prior 0.3 to 0.26.,1,6.794122199993581,255,42
+30,market,1,agent_4,930974206,0.57,The private signal with reliability 0.75 updates the prior probability of 0.3 to 0.57.,1,9.397725899936631,358,38
+30,market,2,agent_1,1245975726,0.44,"The public price history and private signal suggest a moderate probability of NO, adjusting the prior belief based on the reliability of the signal.",1,8.545486100018024,395,38
+30,market,3,agent_5,1164114807,0.37,"The public price history suggests a gradual decrease in probability, and my private signal of reliability 0.7 indicates a NO倾向, leading to a calibrated estimate of 0.37.",1,10.444035499938764,431,50
+30,market,4,agent_2,603155690,0.31,"The private signal indicates NO with reliability 0.6, and the public price history suggests a downward trend, adjusting the prior belief of 0.3.",1,11.081388899940066,467,50
+30,market,5,agent_3,542583970,0.27,"The private signal indicates NO with reliability 0.55, and the public price history suggests a decreasing trend toward lower probabilities, adjusting the estimate downward from the prior of 0.3.",1,11.66185730008874,504,51
